@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ẩm Thực Tây Bắc - Đặc Sản Sơn La</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/1015/1920/1080'); }
+    .card-hover { transition: all 0.3s; }
+    .card-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-emerald-800 text-white sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <i class="fas fa-mountain text-3xl"></i>
+        <div>
+          <h1 class="text-2xl font-bold">Ẩm Thực Tây Bắc</h1>
+          <p class="text-xs -mt-1">Đặc sản Sơn La</p>
+        </div>
+      </div>
+      <div class="hidden md:flex gap-8 text-lg">
+        <a href="#home" class="hover:text-emerald-300">Trang chủ</a>
+        <a href="#sanpham" class="hover:text-emerald-300">Sản phẩm</a>
+        <a href="#vechungtoi" class="hover:text-emerald-300">Về chúng tôi</a>
+        <a href="#lienhe" class="hover:text-emerald-300">Liên hệ</a>
+      </div>
+      <a href="https://zalo.me/0367112999" target="_blank" 
+         class="bg-white text-emerald-800 px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-emerald-100">
+        <i class="fab fa-whatsapp"></i> Zalo 0367.112.999
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero-bg h-screen bg-cover bg-center flex items-center text-white">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-5xl md:text-7xl font-bold leading-tight mb-6">ĐẶC SẢN TÂY BẮC<br>CHÂN THẬT - NGON CHUẨN VỊ</h2>
+      <p class="text-2xl mb-10">Thịt trâu gác bếp • Thịt bò khô • Lạp sườn • Lợn gác bếp<br>Sơn La - Giao toàn quốc</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#sanpham" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xl px-10 py-5 rounded-2xl font-bold">Xem sản phẩm</a>
+        <a href="tel:0367112999" class="border-2 border-white hover:bg-white hover:text-emerald-800 text-xl px-10 py-5 rounded-2xl font-bold">Gọi ngay 0367.112.999</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GIỚI THIỆU -->
+  <section id="vechungtoi" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-bold text-emerald-800 mb-6">Chuyên đặc sản núi rừng Tây Bắc</h2>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            Chúng tôi là cửa hàng đặc sản Tây Bắc tại Tổ 6, Phường Tô Hiệu, TP. Sơn La.<br>
+            Tất cả sản phẩm đều được làm thủ công truyền thống, 100% thịt tươi thả rông, tẩm ướp gia vị rừng (mắc khén, gừng, riềng, lá mắc mật...), hong khói củi rừng tự nhiên.
+          </p>
+          <div class="mt-8 grid grid-cols-3 gap-6 text-center">
+            <div><i class="fas fa-check-circle text-4xl text-emerald-600"></i><p class="mt-2 font-medium">An toàn</p></div>
+            <div><i class="fas fa-leaf text-4xl text-emerald-600"></i><p class="mt-2 font-medium">Tự nhiên</p></div>
+            <div><i class="fas fa-truck text-4xl text-emerald-600"></i><p class="mt-2 font-medium">Giao nhanh</p></div>
+          </div>
+        </div>
+        <img src="https://picsum.photos/id/201/600/500" alt="Cửa hàng" class="rounded-3xl shadow-2xl"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- SẢN PHẨM NỔI BẬT -->
+  <section id="sanpham" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-emerald-800 mb-16">Sản phẩm nổi bật</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Sản phẩm 1 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg card-hover">
+          <img src="https://picsum.photos/id/292/400/300" alt="Thịt trâu gác bếp" class="w-full h-56 object-cover"/>
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">Thịt Trâu Gác Bếp</h3>
+            <p class="text-emerald-600 font-bold text-3xl mt-2">250.000đ <span class="text-sm font-normal text-gray-500">/ 500g</span></p>
+            <p class="text-gray-600 mt-3 text-sm">Thịt trâu thả rông, tẩm mắc khén, hong khói 3 ngày 3 đêm.</p>
+            <a href="https://zalo.me/0367112999" target="_blank" class="block mt-6 bg-emerald-600 text-white text-center py-4 rounded-2xl font-bold">Đặt ngay qua Zalo</a>
+          </div>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg card-hover">
+          <img src="https://picsum.photos/id/431/400/300" alt="Thịt bò khô" class="w-full h-56 object-cover"/>
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">Thịt Bò Khô Tây Bắc</h3>
+            <p class="text-emerald-600 font-bold text-3xl mt-2">280.000đ <span class="text-sm font-normal text-gray-500">/ 500g</span></p>
+            <p class="text-gray-600 mt-3 text-sm">Bò vàng tẩm gia vị rừng, dai ngon, ăn mãi không ngán.</p>
+            <a href="https://zalo.me/0367112999" target="_blank" class="block mt-6 bg-emerald-600 text-white text-center py-4 rounded-2xl font-bold">Đặt ngay qua Zalo</a>
+          </div>
+        </div>
+
+        <!-- Sản phẩm 3 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg card-hover">
+          <img src="https://picsum.photos/id/870/400/300" alt="Lạp sườn" class="w-full h-56 object-cover"/>
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">Lạp Sườn Gác Bếp</h3>
+            <p class="text-emerald-600 font-bold text-3xl mt-2">160.000đ <span class="text-sm font-normal text-gray-500">/ 500g</span></p>
+            <p class="text-gray-600 mt-3 text-sm">Lạp xưởng truyền thống người Thái Đen, thơm lừng.</p>
+            <a href="https://zalo.me/0367112999" target="_blank" class="block mt-6 bg-emerald-600 text-white text-center py-4 rounded-2xl font-bold">Đặt ngay qua Zalo</a>
+          </div>
+        </div>
+
+        <!-- Sản phẩm 4 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg card-hover">
+          <img src="https://picsum.photos/id/201/400/300" alt="Thịt lợn khô" class="w-full h-56 object-cover"/>
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">Thịt Lợn Gác Bếp</h3>
+            <p class="text-emerald-600 font-bold text-3xl mt-2">190.000đ <span class="text-sm font-normal text-gray-500">/ 500g</span></p>
+            <p class="text-gray-600 mt-3 text-sm">Lợn đen thả rông, thịt săn chắc, vị đậm đà.</p>
+            <a href="https://zalo.me/0367112999" target="_blank" class="block mt-6 bg-emerald-600 text-white text-center py-4 rounded-2xl font-bold">Đặt ngay qua Zalo</a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-12 text-gray-500">Muốn mua nhiều hơn hoặc combo? Liên hệ ngay Zalo để được tư vấn & giảm giá!</p>
+    </div>
+  </section>
+
+  <!-- LÝ DO CHỌN -->
+  <section class="bg-emerald-800 text-white py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">Tại sao khách hàng chọn chúng tôi?</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white/10 backdrop-blur rounded-3xl p-8">
+          <i class="fas fa-medal text-6xl mb-6 text-yellow-400"></i>
+          <h4 class="text-2xl font-semibold">Chất lượng chuẩn Sơn La</h4>
+          <p class="mt-4">Nguyên liệu tươi từ bà con dân tộc, chế biến thủ công 100%.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-3xl p-8">
+          <i class="fas fa-shipping-fast text-6xl mb-6 text-emerald-300"></i>
+          <h4 class="text-2xl font-semibold">Giao hàng toàn quốc</h4>
+          <p class="mt-4">Ship COD, đóng gói hút chân không giữ nguyên hương vị.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-3xl p-8">
+          <i class="fas fa-headset text-6xl mb-6 text-emerald-300"></i>
+          <h4 class="text-2xl font-semibold">Hỗ trợ 24/7</h4>
+          <p class="mt-4">Zalo, gọi điện, tư vấn nhiệt tình, đổi trả dễ dàng.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIÊN HỆ + BẢN ĐỒ -->
+  <section id="lienhe" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-4xl font-bold text-emerald-800 mb-8">Liên hệ mua hàng</h2>
+          <div class="space-y-6 text-lg">
+            <p><i class="fas fa-map-marker-alt text-2xl text-emerald-600"></i> <strong>Địa chỉ:</strong> Tổ 6, Phường Tô Hiệu, TP. Sơn La</p>
+            <p><i class="fas fa-phone text-2xl text-emerald-600"></i> <strong>Hotline/Zalo:</strong> <a href="tel:0367112999" class="font-bold text-emerald-600">0367.112.999</a></p>
+            <p><i class="fas fa-clock text-2xl text-emerald-600"></i> <strong>Giờ mở cửa:</strong> 7h30 - 22h00 (cả tuần)</p>
+          </div>
+
+          <form class="mt-12 bg-white p-8 rounded-3xl shadow">
+            <input type="text" placeholder="Họ và tên" class="w-full border rounded-2xl px-6 py-4 mb-4">
+            <input type="tel" placeholder="Số điện thoại" class="w-full border rounded-2xl px-6 py-4 mb-4">
+            <textarea placeholder="Sản phẩm muốn mua..." rows="4" class="w-full border rounded-3xl px-6 py-4"></textarea>
+            <button onclick="alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ ngay!')" 
+                    class="w-full mt-6 bg-emerald-600 text-white py-5 rounded-2xl text-xl font-bold">Gửi yêu cầu đặt hàng</button>
+          </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="rounded-3xl overflow-hidden shadow-2xl h-96 md:h-full">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.123456789!2d103.9123456789!3d21.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDA3JzM0LjAiTiAxMDPCsDU0JzQ0LjAiRQ!5e0!3m2!1svi!2s!4v1700000000000" 
+                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-emerald-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-2xl font-bold">Ẩm Thực Tây Bắc - Đặc Sản Sơn La</p>
+      <p class="mt-4">© 2026 - Đặt hàng nhanh: <strong>0367.112.999</strong></p>
+      <div class="flex justify-center gap-6 mt-6 text-3xl">
+        <a href="https://zalo.me/0367112999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Zalo -->
+  <a href="https://zalo.me/0367112999" target="_blank"
+     class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-4xl hover:scale-110 transition">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
